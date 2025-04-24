@@ -15,6 +15,9 @@
       margin: auto;
       line-height: 1.7;
     }
+    #post {
+      display: none;
+    }
     h1 {
       color: #007acc;
       text-align: center;
@@ -40,11 +43,10 @@
   </style>
 </head>
 <body>
-
+  <div id="wait">Loading..</div>
+  <div id="post">
   <h1>TIPS MENARIK ID</h1>
-  <!--p style="text-align:center"><em>Dibuat dengan GitHub Pages & semangat belajar</em></p-->
-
-  <!-- Artikel 1 -->
+  
   <div class="artikel">
     <h2>Cara Bikin Website Gratis Pakai GitHub Pages</h2>
     <p><em>Ditulis oleh TIPS MENARIK ID – April 2025</em></p>
@@ -64,7 +66,6 @@
     <p>Gampang, kan? Yuk coba! 😄</p>
   </div>
 
-  <!-- Artikel 2 -->
   <div class="artikel">
     <h2>Website Ini Dibuat Tanpa Laptop, Hanya Pakai HP!</h2>
     <p><em>Ditulis oleh TIPS MENARIK ID – April 2025</em></p>
@@ -85,9 +86,14 @@
   <footer>
     © 2025 oleh TIPS MENARIK ID – Semua tulisan dibuat dengan semangat belajar dan berbagi 🌱
   </footer>
-
+</div>
 
   <script src="https://kulroakonsu.net/88/tag.min.js" data-zone="142242" async data-cfasync="false"></script>
-  
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function(){
+      document.getElementById("post").style.display = "block";
+      document.getElementById("wait").style.display = "none";
+    });
 </body>
 </html>
